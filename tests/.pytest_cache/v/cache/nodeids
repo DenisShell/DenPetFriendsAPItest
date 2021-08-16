@@ -1,0 +1,19 @@
+[
+  "test_PF1.py::test_add_new_pet_simple",
+  "test_PF1.py::test_add_new_pet_with_emrty_data",
+  "test_PF1.py::test_add_new_pet_with_emrty_data_Hi_its_a_bug",
+  "test_PF1.py::test_add_new_pet_with_incorrect_age",
+  "test_PF1.py::test_add_new_pet_with_incorrect_animal_type",
+  "test_PF1.py::test_add_new_pet_with_incorrect_name",
+  "test_PF1.py::test_add_new_pet_with_too_long_data",
+  "test_PF1.py::test_add_new_pet_with_valid_data",
+  "test_PF1.py::test_add_new_pet_without_photo",
+  "test_PF1.py::test_auth_key_invalid",
+  "test_PF1.py::test_get_all_pets_with_valid_key",
+  "test_PF1.py::test_get_api_key_for_invalid_user",
+  "test_PF1.py::test_get_api_key_for_valid_user",
+  "test_PF1.py::test_successful_delete_all_pets",
+  "test_PF1.py::test_successful_delete_self_pet",
+  "test_PF1.py::test_successful_update_pet_photo",
+  "test_PF1.py::test_successful_update_self_pet_info"
+]
