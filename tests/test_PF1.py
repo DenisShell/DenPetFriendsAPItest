@@ -239,27 +239,3 @@ def test_auth_key_invalid(filter=''):
     # Ожидаемый результат в данном случае Статус кода - 403
     assert status == 403
 
-def test_successful_delete_all_pets():
-    """Проверяем возможность удаления всех питомцев, убираем за собой"""
-
-    # Получаем ключ auth_key и запрашиваем список своих питомцев
-    _, auth_key = pf.get_api_key(valid_email, valid_password)
-    _, my_pets = pf.get_list_of_pets(auth_key, "my_pets")
-
-    i = len(my_pets['pets'])
-    if i > 0:
-        a = 0
-        while a < i:
-            pet_id = my_pets['pets'][a]['id']
-            status, _ = pf.delete_pet(auth_key, pet_id)
-            assert status == 200
-            a += 1
-
-    # Ещё раз запрашиваем список своих питомцев
-    _, my_pets = pf.get_list_of_pets(auth_key, "my_pets")
-    i = len(my_pets['pets'])
-    if i == 0:
-        assert i == 0
-    else:
-        assert i == 0
-
